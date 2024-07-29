@@ -19,7 +19,8 @@ services:
     image: mysql:8.0
     environment:
       MYSQL_DATABASE: springboot
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT: root
+      MYSQL_PASSWORD: pass@word1
     ports:
       - "3307:3306"
     volumes:
