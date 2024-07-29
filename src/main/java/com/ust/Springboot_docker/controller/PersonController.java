@@ -15,9 +15,15 @@ import java.util.List;
 @RequestMapping("/person")
 public class PersonController {
 
+
     @Autowired
 
     private PersonRepo personRepo;
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello World";
+    }
 
     @PostMapping("/add")
     public  Person addPerson(Person person){
